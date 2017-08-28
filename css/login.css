@@ -6,6 +6,7 @@ body.login {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #444;
 }
 .overlay{
   background: rgba(0, 0, 0, 0.5);

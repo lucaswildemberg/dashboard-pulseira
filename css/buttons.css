@@ -1,13 +1,20 @@
-a.btn-default {
+.btn-default {
     background: #fff;
     color: #439a6c;
     padding: 10px;
     border-radius: 5px;
 }
 
-a.btn-inverse, a.btn-inverse:hover {
+.btn-default, .btn-default:hover {
     background: #439a6c;
     color: #fff !important;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-inverse {
+    background: #fff;
+    color: #439a6c;
     padding: 10px;
     border-radius: 5px;
 }
@@ -23,4 +30,13 @@ a.btn-inverse, a.btn-inverse:hover {
     color: #fff;
     background-color: #439a6c;
     border-color: #439a6c;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #439a6c;
+    border-radius: 0;
+}
+.btn-link:hover {
+    color: #439a6c;
 }

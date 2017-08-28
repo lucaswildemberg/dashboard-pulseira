@@ -105,10 +105,7 @@ i, span {
     font-size: 1.1em;
     display: block;
 }
-#sidebar ul li a:hover {
-    color: #439a6c !important;
-    background: #fff;
-}
+
 #sidebar ul li a i {
     margin-right: 10px;
 }
