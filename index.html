@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Dashboard Pulseira</title>
+
+         <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+
+        <!-- Font-awesome CSS-->
+       <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/card.css">
+        <link rel="stylesheet" href="css/hamburguer-icon.css" />
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="wrapper">
+          <!-- Sidebar Holder -->
+          <nav id="sidebar" toggleClass="active">
+              <div class="sidebar-header">
+                <h3>Pulseira Biônica</h3>
+                <strong>PB</strong>
+              </div>
+
+              <ul class="list-unstyled components">
+                  <li class="active">
+                      <a href="#" >
+                          <i class="glyphicon glyphicon-home"></i>
+                          Pacientes
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="glyphicon glyphicon-briefcase"></i>
+                          Cadastrar pulseiras
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                          <i class="glyphicon glyphicon-duplicate"></i>
+                          Páginas
+                      </a>
+                      <ul class="collapse list-unstyled" id="pageSubmenu">
+                          <li><a href="#">Página 1</a></li>
+                          <li><a href="#">Página 2</a></li>
+                          <li><a href="#">Página 3</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="glyphicon glyphicon-paperclip"></i>
+                          Instruções de uso
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="glyphicon glyphicon-send"></i>
+                          Suporte
+                      </a>
+                  </li>
+              </ul>
+
+              <ul class="list-unstyled CTAs">
+                  <li><a href="#" class="btn-default">Button Default </a></li>
+                  <li><a href="#" class="btn-inverse">Button Inverse</a></li>
+              </ul>
+          </nav>
+
+          <!-- Contéudo da Página -->
+          <div class="container" id="content">
+            <!-- Navbar horizontal -->
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+              <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </nav>
+            <div class="row">
+              <div class="card col-md-4">
+                <img class="card-img-top rounded-circle" src="img/user2.jpg" alt="Card image cap">
+                <div class="card-block img-border">
+                  <h4 class="card-title text-center">Davi Rodrigues</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Informação 1</li>
+                  <li class="list-group-item">Informação 2</li>
+                  <li class="list-group-item">Informação 3</li>
+                  <li class="list-group-item">Informação 4</li>
+                </ul>
+                <div class="card-block text-center">
+                    <a href="#" class="card-link btn-inverse">Mais informações</a>
+                </div>
+              </div>
+
+              <div class="card col-md-4">
+                <img class="card-img-top rounded-circle" src="img/user3.jpg" alt="Card image cap">
+                <div class="card-block img-border">
+                  <h4 class="card-title text-center">Cleiton Lima</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Informação 1</li>
+                  <li class="list-group-item">Informação 2</li>
+                  <li class="list-group-item">Informação 3</li>
+                  <li class="list-group-item">Informação 4</li>
+                </ul>
+                <div class="card-block text-center">
+                    <a href="#" class="card-link btn-inverse">Mais informações</a>
+                </div>
+              </div>
+
+              <div class="card col-md-4">
+                <img class="card-img-top rounded-circle" src="img/user.jpg" alt="Card image cap">
+                <button class="btn btn-danger btn-alert" data-toggle="tooltip" data-placement="top" title="A pressão arterial do paciente está muito alta">PA  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button>
+                <button class="btn btn-warning btn-alert" data-toggle="tooltip" data-placement="top" title="A temperatura do paciente está muito alta">T <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button>
+                <button class="btn btn-primary btn-alert" data-toggle="tooltip" data-placement="top" title="A oximetria do paciente está muito alta"> SpO2 <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button>
+                <button class="btn btn-info rounded-circle btn-alert"><i class="fa fa-bell-o" aria-hidden="true"></i></button>
+                <div class="card-block img-border">
+                  <h4 class="card-title text-center">Mariana Queiroz</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Informação 1</li>
+                  <li class="list-group-item">Informação 2</li>
+                  <li class="list-group-item">Informação 3</li>
+                  <li class="list-group-item">Informação 4</li>
+                </ul>
+                <div class="card-block text-center">
+                    <a href="#" class="card-link btn-inverse">Mais informações</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+       <!-- jQuery CDN -->
+       <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+       <!-- Bootstrap Js CDN -->
+       <script src="bootstrap/js/bootstrap.min.js"></script>
+
+       <!-- Bootstrap Js CDN -->
+       <script src="js/hamburguer-animation.js"></script>
+
+       <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+      </script>
+
+     </script>
+
+    </body>
+</html>

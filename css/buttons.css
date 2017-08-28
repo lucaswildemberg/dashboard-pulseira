@@ -1,0 +1,26 @@
+a.btn-default {
+    background: #fff;
+    color: #439a6c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a.btn-inverse, a.btn-inverse:hover {
+    background: #439a6c;
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-outline-success {
+    color: #439a6c;
+    background-image: none;
+    background-color: transparent;
+    border-color: #439a6c;
+    cursor: pointer;
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #439a6c;
+    border-color: #439a6c;
+}
