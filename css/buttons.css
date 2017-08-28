@@ -1,3 +1,7 @@
+.btn {
+  cursor: pointer;
+}
+
 .btn-default {
     background: #fff;
     color: #439a6c;
