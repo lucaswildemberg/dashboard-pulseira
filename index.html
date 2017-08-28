@@ -35,25 +35,26 @@
                   <li class="active">
                       <a href="#" >
                           <i class="glyphicon glyphicon-home"></i>
-                          Pacientes
+                          Pacientes ativos
                       </a>
                   </li>
                   <li>
-                      <a href="#">
+                      <a href="cadastro-paciente.html">
                           <i class="glyphicon glyphicon-briefcase"></i>
-                          Cadastrar pulseiras
+                          Cadastrar paciente
                       </a>
                   </li>
                   <li>
-                      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
-                          <i class="glyphicon glyphicon-duplicate"></i>
-                          Páginas
+                      <a href="cadastro-pulseira.html">
+                          <i class="glyphicon glyphicon-briefcase"></i>
+                          Cadastrar pulseira
                       </a>
-                      <ul class="collapse list-unstyled" id="pageSubmenu">
-                          <li><a href="#">Página 1</a></li>
-                          <li><a href="#">Página 2</a></li>
-                          <li><a href="#">Página 3</a></li>
-                      </ul>
+                  </li>
+                  <li>
+                      <a href="cadastro-gestor.html">
+                          <i class="glyphicon glyphicon-briefcase"></i>
+                          Cadastrar gestor
+                      </a>
                   </li>
                   <li>
                       <a href="#">
@@ -61,16 +62,10 @@
                           Instruções de uso
                       </a>
                   </li>
-                  <li>
-                      <a href="#">
-                          <i class="glyphicon glyphicon-send"></i>
-                          Suporte
-                      </a>
-                  </li>
               </ul>
 
               <ul class="list-unstyled CTAs">
-                  <li><a href="#" class="btn-default">Button Default </a></li>
+                  <li><a href="#" class="btn-default text-center">SUPORTE </a></li>
               </ul>
           </nav>
 
@@ -90,13 +85,19 @@
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar paciente">
                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
                 </form>
               </div>
             </nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Pacientes ativos</a></li>
+            </ol>
             <div class="row">
-              <div class="card col-md-4">
+              <div class="col-md-12">
+                <a href="cadastro-paciente.html" class="btn-default pull-right mb-3"><i class="fa fa-user"></i> Cadastrar paciente</a>
+              </div>
+              <div class="card paciente col-md-4">
                 <img class="card-img-top rounded-circle" src="img/user2.jpg" alt="Card image cap">
                 <button class="btn btn-info rounded-circle btn-alert emergente" data-toggle="tooltip" data-placement="top" title="Classificação de risco: Emergência"><i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i></button>
                 <div class="card-block img-border">
@@ -114,7 +115,7 @@
                 </div>
               </div>
 
-              <div class="card col-md-4">
+              <div class="card paciente col-md-4">
                 <img class="card-img-top rounded-circle" src="img/user3.jpg" alt="Card image cap">
                 <button class="btn btn-info rounded-circle btn-alert  urgente" data-toggle="tooltip" data-placement="top" title="Classificação de risco: Urgente"><i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i></button>
                 <div class="card-block img-border">
@@ -132,7 +133,7 @@
                 </div>
               </div>
 
-              <div class="card col-md-4">
+              <div class="card paciente col-md-4">
                 <img class="card-img-top rounded-circle" src="img/user.jpg" alt="Card image cap">
                 <button class="btn btn-danger btn-alert" data-toggle="tooltip" data-placement="top" title="A temperatura do paciente está muito alta">T  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button>
                 <button class="btn btn-warning btn-alert" data-toggle="tooltip" data-placement="top" title="A pressão arterial do paciente está muito baixa">PA <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button>

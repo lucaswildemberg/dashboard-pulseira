@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Health Bracelet</title>
+
+         <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+
+        <!-- Font-awesome CSS-->
+       <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/card.css">
+        <link rel="stylesheet" href="css/hamburguer-icon.css" />
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="wrapper">
+          <!-- Sidebar Holder -->
+          <nav id="sidebar" toggleClass="active">
+              <div class="sidebar-header">
+                <h3>Health Bracelet</h3>
+                <strong>HB</strong>
+              </div>
+
+              <ul class="list-unstyled components">
+                  <li class="active">
+                      <a href="index.html" >
+                          <i class="glyphicon glyphicon-home"></i>
+                          Pacientes ativos
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="glyphicon glyphicon-briefcase"></i>
+                          Cadastrar paciente
+                      </a>
+                  </li>
+                  <li>
+                      <a href="cadastro-pulseira.html">
+                          <i class="glyphicon glyphicon-briefcase"></i>
+                          Cadastrar pulseira
+                      </a>
+                  </li>
+                  <li>
+                      <a href="cadastro-gestor.html">
+                          <i class="glyphicon glyphicon-briefcase"></i>
+                          Cadastrar gestor
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="glyphicon glyphicon-paperclip"></i>
+                          Instruções de uso
+                      </a>
+                  </li>
+              </ul>
+
+              <ul class="list-unstyled CTAs">
+                  <li><a href="#" class="btn-default text-center">SUPORTE </a></li>
+              </ul>
+          </nav>
+
+          <!-- Contéudo da Página -->
+          <div class="container" id="content">
+            <!-- Navbar horizontal -->
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+              <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Desativado</a>
+                  </li>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                </form> -->
+              </div>
+            </nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Pacientes ativos</a></li>
+              <li class="breadcrumb-item active">Cadastrar paciente</li>
+            </ol>
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <div class="card">
+                  <div class="card-header form">
+                    Cadastrar Paciente
+                  </div>
+                  <div class="card-block">
+                    <form>
+                    <div class="form-group">
+                      <label for="numeroPulseira">Número da pulseira</label>
+                      <input type="number" class="form-control" id="numeroPulseira" aria-describedby="pulseiraInfo" placeholder="Digite o ID da pulseira do paciente">
+                    </div>
+                    <div class="form-group">
+                      <label for="nomePaciente">Nome do paciente</label>
+                      <input type="text" class="form-control" id="nomePaciente" placeholder="Digite o nome do paciente">
+                    </div>
+                    <div class="form-group">
+                      <label for="cpfPaciente">CPF do paciente</label>
+                      <input type="number" class="form-control" id="cpfPaciente" aria-describedby="cpfInfo" placeholder="000.000.000-00">
+                      <small id="cpfinfo" class="form-text text-muted">Digite somento os números</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="cartaoSUS">Número cartão do SUS</label>
+                      <input type="number" class="form-control" id="cartaoSUS" aria-describedby="cartaoSUSInfo" placeholder="000 0000 0000 0000">
+                      <small id="cartaoSUSInfo" class="form-text text-muted">Digite sem os espaços</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="classificacaoRisco">Classificação de risco</label>
+                      <select class="form-control" id="classificacaoRisco">
+                        <option>Não urgente</option>
+                        <option>Pouco urgente</option>
+                        <option>Urgente</option>
+                        <option>Emergência</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="diagnosticoPrevio">Diagnóstico prévio </label>
+                      <textarea class="form-control" id="diagnosticoPrevio" rows="3" placeholder="Digite as informações prévias ditas pelo paciente"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="fotoPaciente">Foto do paciente</label>
+                      <input type="file" class="form-control-file" id="fotoPaciente" aria-describedby="fotoInfo">
+                      <small id="fotoInfo" class="form-text text-muted">Ative a webcam para fotografar o paciente</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar paciente</button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       <!-- jQuery CDN -->
+       <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+       <!-- Bootstrap Js CDN -->
+       <script src="bootstrap/js/bootstrap.min.js"></script>
+
+       <!-- Bootstrap Js CDN -->
+       <script src="js/hamburguer-animation.js"></script>
+
+       <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+      </script>
+
+     </script>
+
+    </body>
+</html>

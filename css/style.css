@@ -25,3 +25,9 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
+
+
+.breadcrumb {
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
