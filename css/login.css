@@ -1,0 +1,23 @@
+/** login page */
+
+body.login {
+  background: url(../img/background-login.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay{
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+.panel-heading.login-heading {
+    margin: 0 auto;
+    background: transparent;
+    padding: 15px;
+    font-size: 32px;
+    text-align: center;
+}
