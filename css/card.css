@@ -53,11 +53,30 @@
   top: -34px;
 }
 .btn-alert.btn-info.rounded-circle{
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
   position: relative;
   left: 260px;
   top: -82px;
   margin-bottom: -57px;
+}
+.emergente {
+  color: #fff!important;
+  background-color: #d9534f!important;
+  border-color: #d9534f!important;
+}
+.urgente {
+  color: #fff!important;
+  background-color: #f0ad4e!important;
+  border-color: #f0ad4e!important;
+}
+.pouco-urgente {
+  background-color: #5cb85c!important;
+  border-color: #5cb85c!important;
+}
+.nao-urgente {
+  color: #fff !important;
+  background-color: #0275d8!important;
+  border-color: #0275d8!important;
 }
